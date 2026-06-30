@@ -1,0 +1,13 @@
+.git
+.gitignore
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user
+.DS_Store
+*.Rproj
+*.tar.gz
+*.html
+README.md
+DEPLOYMENT.md
+email_to_Asa.md

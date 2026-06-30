@@ -1,0 +1,181 @@
+ID,Description
+CH_SZWT_C_L25,Birth weight: Less than 2.5 kg
+CH_DIAT_C_ORT,Diarrhea treatment (Children under five with diarrhea treated with either ORS or RHF)
+CH_DIAT_C_ABI,Treatment of diarrhea: Antibiotics
+CH_DIAT_C_ADV,Treatment of diarrhea: Advice or treatment was sought
+CH_DIAT_C_AMO,Treatment of diarrhea: Antimotility drugs
+CH_ARIS_C_ADV,Children with ARI for whom advice or treatment was sought
+CH_DIAT_C_ORS,Treatment of diarrhea: Oral rehydration solution (ORS)
+CH_DIAT_C_OSI,Treatment of diarrhea: ORS or increased fluids
+CH_DIAT_C_RHF,Treatment of diarrhea: Recommended home fluids (RHF) at home
+CH_DIAT_C_NOT,Treatment of diarrhea: No treatment
+CH_FEVR_C_FEV,Children with fever in the last two weeks
+CH_FEVT_C_ADV,Children with fever for whom advice or treatment was sought
+CH_VACC_C_BAS,Children age 12-23 months with all 8 basic vaccinations
+CH_VACC_C_BCG,BCG vaccination received
+CH_VACC_C_PN3,Pneumococcal 3 vaccination received
+CH_VACC_C_MSL,Percentage of children 12-23 months who had received MCV 1 (Measles containing vaccine)
+CH_VACC_C_NON,Children 12-23 months with no vaccinations
+CH_VACC_C_DP1,Percentage of children 12-23 months who had received DPT 1 vaccination
+CH_VACC_C_DP3,Percentage of children 12-23 months who had received DPT 3 vaccination
+CH_DIFP_C_FAL,Feeding practices during diarrhea: ORT and continued feeding
+CM_ECMR_C_NNF,Probability of dying in the first month of life in the five years preceding the survey
+CM_ECMR_C_NNR,Probability of dying in the first month of life in the ten years preceding the survey
+DV_PCPV_W_CHD,Physical violence committed by daughter/son
+DV_EXPV_W_12M,Physical violence in the past 12 months often or sometimes
+DV_AFSV_W_A12,Sexual violence before exact age 12
+DV_PCPV_W_CBF,Physical violence committed by current boyfriend
+DV_EXSV_W_12M,Women who experienced sexual violence in past 12 months
+DV_EXSV_W_EVR,Women who ever experienced sexual violence
+DV_PCPV_W_FLW,Physical violence committed by father-in-law
+DV_PCPV_W_OLW,Physical violence committed by other in-law
+DV_STPS_W_BFR,Sought help to stop violence from current/former boyfriend
+DV_PCPV_W_EMP,Physical violence committed by employer/someone at work
+DV_AFSV_W_A10,Sexual violence before exact age 10
+DV_VPRG_W_VPG,Women who experienced violence during pregnancy
+PR_DESL_W_WNM,Women who want no more children
+FG_PFCC_W_WCC,Women circumcised (FGC)
+FG_KFCC_W_HFC,Ever heard of female circumcision (women)
+FP_CUSA_W_MOD,Current use of any modern method of contraception (all women)
+FP_KMTA_W_IMP,Knowledge of implants (all women)
+FP_KMTA_W_INJ,Knowledge of injections (all women)
+FP_KMTA_W_IUD,Knowledge of IUD (all women)
+FP_NADA_W_UNT,"Unmet need for family planning, total (all women)"
+FP_EFPM_M_TLV,Family planning messages on television [Men]
+FP_EFPM_W_NWS,Family planning messages in newspapers or magazines [Women]
+FP_EFPM_W_RDO,Family planning messages on the radio [Women]
+FP_EFPM_W_TLV,Family planning messages on television [Women]
+FP_EVUM_W_MOD,Ever use of any modern method of contraception (married women)
+FP_KMTA_W_ANY,Knowledge of any method of contraception (all women)
+FP_KMTA_W_EMC,Knowledge of emergency contraception (all women)
+FP_KMTA_W_FCN,Knowledge of female condom (all women)
+FP_KMTA_W_FST,Knowledge of female sterilization (all women)
+FP_CUSA_W_STD,Current use of standard days method (all women)
+FP_CUSA_W_TRA,Current use of any traditional method (all women)
+FP_CUSA_W_WTH,Current use of withdrawal (all women)
+FP_CUSM_W_MOD,Current use of any modern method of contraception (married women)
+FP_EFPM_M_NWS,Family planning messages in newspapers or magazines [Men]
+FP_KMTA_W_OMD,Knowledge of other modern methods (all women)
+FP_KMTA_W_PIL,Knowledge of pill (all women)
+FP_KMTA_W_STD,Knowledge of standard days method (all women)
+FP_KMTA_W_TRA,Knowledge of any traditional method (all women)
+FP_KMTA_W_WTH,Knowledge of withdrawal (all women)
+FP_NADM_W_UNT,Unmet need for family planning (married women)
+FP_CUSA_W_MCN,Current use of condom (all women)
+FP_CUSA_W_MST,Current use of male sterilization (all women)
+FP_CUSA_W_PIL,Current use of pill (all women)
+FP_CUSA_W_EMC,Current use of emergency contraception (all women)
+FP_CUSA_W_FCN,Current use of female condom (all women)
+FP_CUSA_W_FST,Current use of female sterilization (all women)
+FP_KMTA_W_MST,Knowledge of male sterilization (all women)
+FP_CUSA_W_INJ,Current use of injections (all women)
+FP_CUSA_W_IUD,Current use of IUD (all women)
+FP_CUSA_W_IMP,Current use of implants (all women)
+FP_CUSA_W_ANY,Current use of any method of contraception (all women)
+HA_STIS_M_DIS,Men reporting a bad smelling or abnormal genital discharge
+HA_HVTY_W_TRR,"HIV testing behaviour among young women, sexually active in the last 12 months"
+HA_KAID_W_HRD,Women who have heard of HIV or AIDS
+HA_AFSY_M_A15,Sex before the age of 15 [Men]
+HA_HVTY_M_TRR,"HIV testing behaviour among young men, sexually active in the last 12 months"
+HA_STIS_W_STI,Women reporting an STI
+HA_AFSY_W_A18,Sex before the age of 18 [Women]
+HA_CATH_W_NRS,Pregnant women tested for HIV during ANC not receiving results
+HA_STIS_M_SOR,Men reporting a genital sore or ulcer
+HA_HVST_M_USD,Ever used an HIV self test kit
+HA_CATH_W_ATN,"Pregnant women tested for HIV during ANC or labor, but did not receive the results"
+HA_HRSX_W_CND,"Condom use at last higher risk sex (with a non-marital, non-cohabiting partner) [Women]"
+HA_AFSY_M_A18,Sex before the age of 18 [Men]
+HA_HVST_M_HRD,Ever heard of HIV self test kits
+HA_HIVP_B_HIV,HIV prevalence 
+ML_NETP_H_IT2,Households with at least one insecticide-treated mosquito net (ITN) for every two persons who stayed in the household the previous night
+ML_NETC_C_ITN,Children under 5 who slept under an insecticide-treated net (ITN)
+ML_NETU_P_ITN,Population who slept under an insecticide-treated mosquito net (ITN) last night
+MA_MBAY_W_B18,Young women age 20-24 first married by exact age 18
+MA_MBAY_W_B15,Young women age 20-24 first married by exact age 15
+MA_MSTA_W_NMA,Current marital status [Women]: Never married
+MA_CWIV_W_CWV,Number of co-wives: One or more wives
+AN_ANEM_W_ANY,Percentage of women aged 15-49 classified as having any anemia
+AN_NUTS_W_THN,Underweight (Prevalence of underweight (BMI < 18.5) women of reproductive age)
+CN_NUTS_C_WA3,Children severely underweight
+CN_BRFI_C_EVR,Children ever breastfed
+CN_NUTS_C_HA3,Children severely stunted
+CN_NUTS_C_WA2,Children underweight
+CN_BRFS_C_EXB,Children exclusively breastfed (Prevalence of exclusive breastfeeding of children under six months of age)
+CN_NUTS_C_WAP,Children overweight for their age
+CN_NUTS_C_WH3,Children severely wasted
+CN_ANMC_C_ANY,Children under five with any anemia
+AN_NUTS_W_OVW,Women who are overweight according to BMI (25.0-29.9)
+CN_NUTS_C_HA2,Stunting rate (Prevalence of stunted (HAZ < -2) children under five (0-59 months))
+CN_NUTS_C_WH2,Wasting rate (Prevalence of wasted (HAZ < -2) children under five (0-59 months))
+CN_NUTS_C_WHP,Children overweight
+WS_TLET_P_BAS,Population with access to a basic sanitation service
+WS_SRCE_P_BAS,Population using a basic water source
+HC_AGEG_P_ADL,Adolescents 10-19
+HC_ELEC_H_ELC,Households with electricity
+CP_BREG_C_CRT,Children who had a birth certificate
+HC_FLRM_H_CER,Households with ceramic tile floors
+WS_TLET_H_IMP,Percentage of households using an improved sanitation facility
+HC_HEFF_H_RDO,Households possessing a radio
+WS_WTRT_H_SOL,Households treating water using solar disinfection
+CP_BREG_C_NCT,Children who did not have a birth certificate but were registered
+WS_WTRT_P_STN,Population treating water by straining through a cloth
+HC_WIXQ_P_LOW,Population in the lowest wealth quintile
+HC_WIXQ_P_2ND,Population in the second wealth quintile
+WS_WTRT_P_BLC,Population treating water by adding bleach/chlorine
+CP_BREG_C_REG,Children registered
+WS_WTRT_P_SOL,Population treating water using solar disinfection
+WS_WTRT_P_BOL,Population treating water by boiling
+HC_WIXQ_P_12Q,Percentage of the de jure population in the lowest or second wealth quintile
+AH_TOBU_M_SNN,Men using snuff by nose
+CO_INUS_W_EVU,Women who ever used the internet
+ED_MDIA_W_RDO,Women who listen to the radio at least once a week
+ED_MDIA_W_TLV,Women who watch television at least once a week
+AH_TOBU_M_ASM,Men using any type of smokeless tobacco
+ED_MDIA_W_NWS,Women who read a newspaper at least once a week
+AH_TOBU_W_SNM,Women using snuff by mouth
+CO_INUS_W_U12,Women who used the internet in the past 12 months
+AH_TOBC_W_OTH,Women who smoke other tobacco
+ED_MDIA_W_3MD,"Women with access to newspaper, television and radio at least once a week"
+ED_MDIA_W_N3M,Women with no access to mass media
+ED_EDUC_W_SEH,Women with secondary or higher education
+AH_TOBU_W_SNN,Women using snuff by nose
+ED_LITR_W_LIT,Women who are literate
+RH_ANCN_W_N4F,"Antenatal visits for pregnancy: 4+ visits, 5 years preceding the survey"
+RH_ANCN_W_N01,Antenatal visits for pregnancy: 1
+RH_DELA_C_SKF,"Assistance during delivery from a skilled provider, 5 years preceding the survey"
+RH_ANCN_W_N4P,"Antenatal visits for pregnancy: 4+ visits, 2 years preceding the survey"
+RH_DELA_C_SKP,"Assistance during delivery from a skilled provider, 2 years preceding the survey"
+RH_PCCT_C_DY2,Newborn's first postnatal checkup in the first two days after birth
+RH_DELP_C_DHF,"Place of delivery: Health facility, 5 years preceding the survey"
+RH_DELP_C_DHT,"Place of delivery: Health facility, 2 years preceding the survey"
+HA_ANSS_W_CND,Woman is justified in asking that they use a condom if she knows that her husband has an sti [Women]
+WE_AWBT_M_REF,Wife beating justified if she refuses to have sex with him [Men]
+WE_AWBT_M_OUT,Wife beating justified if she goes out without telling him [Men]
+EM_EMPM_W_EMP,Married women employed in the last 12 months
+HA_ANSS_M_CND,Woman is justified in asking that they use a condom if she knows that her husband has an sti [Men]
+WE_AWBT_M_BFD,Wife beating justified if she burns the food [Men]
+HA_ANSS_W_RSX,Woman is justified in refusing to have sexual intercourse with her husband if she knows he has sex with other women [Women]
+WE_AWBT_W_ARG,Wife beating justified if she argues with him [Women]
+WE_AWBT_M_ARG,Wife beating justified if she argues with him [Men]
+CO_MOBB_W_MBF,Women who use a mobile phone for financial transactions
+CO_MOBB_W_MOB,Women who own a mobile phone
+WE_AWBT_W_REF,Wife beating justified if she refuses to have sex with him [Women]
+WE_AWBT_W_BFD,Wife beating justified if she burns the food [Women]
+WE_AWBT_W_OUT,Wife beating justified if she goes out without telling him [Women]
+CO_MOBB_W_BNK,Women who have a bank account
+WE_AWBT_W_NEG,Wife beating justified if she neglects the children [Women]
+RH_DELP_C_HOT,Place of delivery: At home
+RH_DELP_C_HOM,Place of delivery: At home
+RH_DELP_C_PRV,Place of delivery: Private sector
+RH_DELP_C_PRT,Place of delivery: Private sector
+RH_DELP_C_PUB,Place of delivery: Public sector
+RH_DELP_C_PUT,Place of delivery: Public sector
+CM_ECMR_C_U5M,Under-five mortality rate in the ten years preceding the survey
+CM_ECMR_C_U5F,Under-five mortality rate in the five years preceding the survey
+RH_PCMT_W_DY2,Mother's first postnatal checkup in the first two days after birth
+FP_NDYA_W_PDM,Demand for family planning satisfied by modern methods (all young women)
+FP_NADM_W_PDM,Demand for family planning satisfied by modern methods
+RH_PCMT_W_NON,No postnatal checkup for mother
+RH_PAHC_W_DIS,Problems in accessing health care: Distance to health facility
+RH_PAHC_W_MON,Problems in accessing health care: Getting money for treatment
+RH_PAHC_W_PRM,Problems in accessing health care: Getting permission to go for treatment
