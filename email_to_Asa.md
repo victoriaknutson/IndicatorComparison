@@ -23,14 +23,13 @@ where the app reads its data from — so I've split them out below.
 2. Where the app reads its data (internal estimates location). Separately from the
    deploy URL above, the app fetches per-country estimate files at runtime from:
        <DATA_BASE>/Gates_Indicator_Comparison/estimates/<Country>/combined_results.csv
-   For sae4health, I understand the data (DHS_survey_dat) isn't under the app's
-   public URL but at a different internal server link. We'd like the same kind of
-   setup. Could you let us know:
-     - What base URL / internal path should we use as <DATA_BASE> for the estimates?
-       We'll point the app at it via the INDICATOR_SERVER_LINK environment variable.
-     - Where should we place the "Gates_Indicator_Comparison/estimates/..." files so
-       the app can read them (and confirm they'll be reachable from the container)?
-       We can hand off the per-country combined_results.csv files.
+   The data is already in place — it lives in the Dropbox "Gates_Indicator_Comparison"
+   folder that the internal UW Statistics data server connects to, so nothing needs to
+   be uploaded or moved. (This is the same arrangement as sae4health, whose data isn't
+   under its public URL but at a separate internal server link.) All we need from you:
+     - What base URL / internal path should we use as <DATA_BASE> so the app reaches
+       that Gates_Indicator_Comparison folder? We'll point the app at it via the
+       INDICATOR_SERVER_LINK environment variable.
 
 3. Pulling and running the image. The CI publishes the (public) image
    ghcr.io/victoriaknutson/indicatorcomparison:latest. Could you confirm how the
