@@ -6,31 +6,33 @@ library(ggplot2)
 library(plotly)
 
 # ============================================================
-# SERVER CONFIGURATION
+# DATA SOURCE CONFIGURATION
 # ------------------------------------------------------------
-# `server_link` is the base location of the pre-modeled estimates.
+# `server_link` is the base location where the pre-modeled ESTIMATES are hosted.
 # The app reads each country's file from:
 #
 #   server_link + "Gates_Indicator_Comparison/estimates/" + Country + "/combined_results.csv"
 #
-# This mirrors the sae4health app's server connection (which reads from
-#   https://sites.stat.washington.edu/sae4health/DHS_survey_dat/...), but this
-# app has its OWN base path on the UW Statistics web server and reads from the
-# Gates_Indicator_Comparison folder underneath it.
+# IMPORTANT: this is the DATA location, which is NOT the same as the URL where
+# the app is deployed. The app is served to users at
+#   https://sites.stat.washington.edu/indicatorcomparison/
+# (configured by the UW Stats reverse proxy), but it pulls its data from a
+# SEPARATE internal server location. This mirrors sae4health, which is served at
+#   https://sites.stat.washington.edu/sae4health/
+# yet reads its DHS_survey_dat from a different internal link.
 #
-# Two ways to point at data:
-#   1. A remote http(s) base (production / UW Stats server) -- read over the
-#      network with url().
-#   2. A local folder (development / Dropbox mirror) -- read from disk.
-# Either is detected automatically by load_country_data().
+# Set `server_link` to that internal data URL via the INDICATOR_SERVER_LINK
+# environment variable at deploy time (get the value from UW Stats IT -- see
+# email_to_Asa.md). It can also be a local folder for development (read from disk
+# instead of over http); load_country_data() detects which automatically.
 #
-# NOTE: the production base URL below is this app's path on the UW Statistics
-# web server. Confirm the exact public path for the estimates with UW Stats IT
-# (see the deployment email) before relying on it in production.
+# The unset default below is a local Dropbox mirror for development only.
 # ============================================================
 server_link <- Sys.getenv(
   "INDICATOR_SERVER_LINK",
-  unset = "https://sites.stat.washington.edu/indicatorcomparison/"
+  # Development fallback (local data mirror). Production sets INDICATOR_SERVER_LINK
+  # to the internal estimates URL provided by UW Stats IT.
+  unset = "/Users/victoriaknutson/Library/CloudStorage/Dropbox/GATES/Gates-results/estimates"
 )
 
 # Subfolder (under server_link) that holds the pre-modeled estimates.
