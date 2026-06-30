@@ -3,7 +3,19 @@ source("global.R")
 # ==============================================================
 # UI
 # ==============================================================
-ui <- fluidPage(
+# UI is a function of `request` so we can read the ?country= query string at
+# page-render time and select that country immediately -- no websocket round-trip
+# and no flash of the default country. Matching is case- and whitespace-insensitive.
+ui <- function(request) {
+  preselected_country <- available_countries[1]
+  requested_country <- parseQueryString(request$QUERY_STRING)[["country"]]
+  if (!is.null(requested_country) && nzchar(requested_country)) {
+    idx <- match(tolower(trimws(requested_country)),
+                 tolower(trimws(available_countries)))
+    if (!is.na(idx)) preselected_country <- available_countries[idx]
+  }
+
+  fluidPage(
   tags$head(
     tags$link(
       rel = "stylesheet",
@@ -59,7 +71,8 @@ ui <- fluidPage(
       width = 3,
       div(class = "sidebar-section",
         div(class = "section-label", "Selection"),
-        selectInput("country", "Country", choices = available_countries),
+        selectInput("country", "Country", choices = available_countries,
+          selected = preselected_country),
         selectInput("year", "Year", choices = NULL),
         selectInput("admin_level", "Admin Level",
           choices = c("Admin 1" = 1, "Admin 2" = 2),
@@ -105,7 +118,8 @@ ui <- fluidPage(
       uiOutput("plot_canvas")
     )
   )
-)
+  )
+}
 
 # ==============================================================
 # Server
