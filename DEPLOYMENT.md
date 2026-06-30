@@ -20,9 +20,9 @@ At runtime the app fetches, per selected country:
 <server_link>/Gates_Indicator_Comparison/estimates/<Country>/combined_results.csv
 ```
 
-- `server_link` defaults to `https://sites.stat.washington.edu/sae4health/`
-  (same base the sae4health app uses), overridable with the `INDICATOR_SERVER_LINK`
-  environment variable at `docker run` time.
+- `server_link` defaults to `https://sites.stat.washington.edu/indicatorcomparison/`
+  (this app's own base path on the UW Stats server, distinct from sae4health's),
+  overridable with the `INDICATOR_SERVER_LINK` environment variable at `docker run` time.
 - Country names are URL-encoded, so `Burkina Faso` becomes `Burkina%20Faso`.
 - No data is baked into the image — estimates are read over the network, exactly
   as sae4health reads its `DHS_survey_dat/` files.
@@ -43,7 +43,7 @@ cd IndicatorComparison
 docker build -t indicatorcomparison .
 # point at a base URL that actually hosts the estimates:
 docker run --rm -p 3838:3838 \
-  -e INDICATOR_SERVER_LINK="https://sites.stat.washington.edu/sae4health/" \
+  -e INDICATOR_SERVER_LINK="https://sites.stat.washington.edu/indicatorcomparison/" \
   indicatorcomparison
 # open http://localhost:3838
 ```

@@ -13,19 +13,18 @@ dependencies. The container serves on port 3838.
 A few things I'd like to check on your end to get it connected and deployed:
 
 1. Data hosting / URL. The app reads its estimates over https from:
-       <base>/Gates_Indicator_Comparison/estimates/<Country>/combined_results.csv
-   We're currently defaulting <base> to https://sites.stat.washington.edu/sae4health/
-   (the same base sae4health uses). Can you confirm:
-     - Is that the right base URL, or should the Gates estimates live somewhere else?
+       https://sites.stat.washington.edu/indicatorcomparison/Gates_Indicator_Comparison/estimates/<Country>/combined_results.csv
+   This is its own base path (separate from sae4health's). Can you confirm:
+     - Can you set up https://sites.stat.washington.edu/indicatorcomparison/ as the
+       app's base path, or should it live at a different URL?
      - Where should we place the "Gates_Indicator_Comparison/estimates/..." files on
        the server so they're web-readable, and can you confirm they'll be reachable
        at that URL? (We can hand off the per-country combined_results.csv files.)
 
-2. Pulling and running the image. The CI publishes
-   ghcr.io/<our-org>/IndicatorComparison:latest. Could you confirm how the server
-   should pull and run it (the same way sae4health is run)? Specifically:
-     - Does the server pull from ghcr.io directly? If the image needs to be private,
-       what credentials/token should we provide; otherwise we can make it public.
+2. Pulling and running the image. The CI publishes the (public) image
+   ghcr.io/victoriaknutson/indicatorcomparison:latest. Could you confirm how the
+   server should pull and run it (the same way sae4health is run)? Specifically:
+     - The image is public, so the server can pull from ghcr.io without credentials.
      - What's the mechanism to auto-update the running container when a new image is
        published (e.g. Watchtower, a webhook, a cron pull, or however sae4health
        currently updates)?

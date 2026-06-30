@@ -14,8 +14,9 @@ library(plotly)
 #   server_link + "Gates_Indicator_Comparison/estimates/" + Country + "/combined_results.csv"
 #
 # This mirrors the sae4health app's server connection (which reads from
-#   <base>/DHS_survey_dat/...), but points at the Gates_Indicator_Comparison
-# folder on the UW Statistics web server instead.
+#   https://sites.stat.washington.edu/sae4health/DHS_survey_dat/...), but this
+# app has its OWN base path on the UW Statistics web server and reads from the
+# Gates_Indicator_Comparison folder underneath it.
 #
 # Two ways to point at data:
 #   1. A remote http(s) base (production / UW Stats server) -- read over the
@@ -23,13 +24,13 @@ library(plotly)
 #   2. A local folder (development / Dropbox mirror) -- read from disk.
 # Either is detected automatically by load_country_data().
 #
-# NOTE: the production base URL below is the UW Statistics web server used by
-# sae4health. Confirm the exact public path for the Gates estimates with UW
-# Stats IT (see the deployment email) before relying on it in production.
+# NOTE: the production base URL below is this app's path on the UW Statistics
+# web server. Confirm the exact public path for the estimates with UW Stats IT
+# (see the deployment email) before relying on it in production.
 # ============================================================
 server_link <- Sys.getenv(
   "INDICATOR_SERVER_LINK",
-  unset = "https://sites.stat.washington.edu/sae4health/"
+  unset = "https://sites.stat.washington.edu/indicatorcomparison/"
 )
 
 # Subfolder (under server_link) that holds the pre-modeled estimates.
